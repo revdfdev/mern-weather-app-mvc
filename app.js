@@ -48,7 +48,11 @@ app.options("*", cors());
 
 require('./routes/routes.index')(app);
 
-
+app.use(express.static(path.join(__dirname, "/client/build")));
+/*React root*/
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname + "/client/build/index.html"));
+});
 
 app.listen(process.env.PORT || 4000, function() {
     console.log(chalk.green(`Listening to request on port ${process.env.PORT || 4000}`))
