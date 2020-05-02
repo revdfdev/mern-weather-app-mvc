@@ -15,7 +15,7 @@ export function Content({ weatherInfo }) {
                             <div className="title">
                                 <p>{weatherInfo.cityname}</p>
                             </div>
-                            <div className="temp">+{weatherInfo.temp}<sup>&deg;</sup>c</div>
+                            <div className="temp">{weatherInfo.temp}<sup>&deg;</sup>c</div>
                             <div className="row">
                                 <div className="col-4">
                                     <div className="header">Condition</div>
@@ -23,11 +23,11 @@ export function Content({ weatherInfo }) {
                                 </div>
                                 <div className="col-4">
                                     <div className="header">Min</div>
-                                    <div className="value">+{weatherInfo.temp_min}<sup>&deg;</sup>c</div>
+                                    <div className="value">{weatherInfo.temp_min}<sup>&deg;</sup>c</div>
                                 </div>
                                 <div className="col-4">
                                     <div className="header">Max</div>
-                                    <div className="value">+{weatherInfo.temp_max}<sup>&deg;</sup>c</div>
+                                    <div className="value">{weatherInfo.temp_max}<sup>&deg;</sup>c</div>
                                 </div>
                             </div>
                         </div>

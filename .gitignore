@@ -107,3 +107,4 @@ dist
 client/node_modules
 client/.env.local
 client/*.log
+client/build
