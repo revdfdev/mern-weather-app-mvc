@@ -4,7 +4,7 @@ const CITY_PATH = '/api/v1/city/cities';
 const WEATHER_PATH = '/api/v1/current-weather/city';
 
 const instance = axios.create({
-    baseURL: process.env.REACT_APP_BASE_URL,
+    baseURL: process.env.baseURL || process.env.REACT_APP_BASE_URL,
     timeout: 20000,
     headers: {
         'Accept': 'application/json',
