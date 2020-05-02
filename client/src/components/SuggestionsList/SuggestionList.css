@@ -1,0 +1,23 @@
+.custom-dropdown:hover {
+    background-color: rgb(238, 237, 237);
+    color: black;
+    cursor: pointer;
+}
+
+.custom-dropdown {
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.custom-dropdown-container {
+    border: 1px solid rgb(219, 218, 218);
+    border-bottom-left-radius: 5px;
+    position: absolute;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+    width: 90%;
+    z-index: 99;
+    margin-top: -15px;
+}
